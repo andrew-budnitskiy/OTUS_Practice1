@@ -7,12 +7,13 @@
 
 import SwiftUI
 
+//The third tabview's tab item
 struct TabItem3: View {
 
     @State private var isModalScreenPreented = false
 
     var body: some View {
-        Button("Открыть модальное окно") {
+        Button("Present the modal view") {
             self.isModalScreenPreented.toggle()
         }
         .padding()
@@ -23,14 +24,6 @@ struct TabItem3: View {
         .sheet(isPresented: $isModalScreenPreented) {
             ModalView()
         }
-    }
-
-    private func navigationLinkForItem(with index: Int) -> some View {
-
-        return NavigationLink("Ссылка \(index)") {
-            Text("Раздел \(index)")
-        }
-
     }
 
 }

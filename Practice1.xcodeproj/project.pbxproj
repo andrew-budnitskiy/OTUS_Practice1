@@ -17,6 +17,10 @@
 		0B83FF6227D5FE0100050E2C /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B83FF6127D5FE0100050E2C /* MainTabView.swift */; };
 		0B83FF6427D60A3E00050E2C /* TabItem1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B83FF6327D60A3E00050E2C /* TabItem1.swift */; };
 		0B83FF6627D60B1500050E2C /* TabItem2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B83FF6527D60B1500050E2C /* TabItem2.swift */; };
+		CE23555B27D87FB80085ADD1 /* FirstPageButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE23555A27D87FB80085ADD1 /* FirstPageButtonStyle.swift */; };
+		CE23555D27D880220085ADD1 /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE23555C27D880220085ADD1 /* TimerManager.swift */; };
+		CE23555F27D880C30085ADD1 /* ButtonMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE23555E27D880C30085ADD1 /* ButtonMode.swift */; };
+		CE23556227D8817C0085ADD1 /* TabManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE23556127D8817C0085ADD1 /* TabManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,10 @@
 		0B83FF6127D5FE0100050E2C /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		0B83FF6327D60A3E00050E2C /* TabItem1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem1.swift; sourceTree = "<group>"; };
 		0B83FF6527D60B1500050E2C /* TabItem2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem2.swift; sourceTree = "<group>"; };
+		CE23555A27D87FB80085ADD1 /* FirstPageButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPageButtonStyle.swift; sourceTree = "<group>"; };
+		CE23555C27D880220085ADD1 /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
+		CE23555E27D880C30085ADD1 /* ButtonMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonMode.swift; sourceTree = "<group>"; };
+		CE23556127D8817C0085ADD1 /* TabManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,14 +71,13 @@
 		0B83FF5227D5FDA500050E2C /* Practice1 */ = {
 			isa = PBXGroup;
 			children = (
+				CE23556027D881370085ADD1 /* Library */,
 				0B83FF5327D5FDA500050E2C /* Practice1App.swift */,
 				0B83FF5527D5FDA500050E2C /* ContentView.swift */,
-				0B6A78E927D72F4000330667 /* ActivityIndicator.swift */,
 				0B83FF6127D5FE0100050E2C /* MainTabView.swift */,
 				0B83FF6327D60A3E00050E2C /* TabItem1.swift */,
 				0B83FF6527D60B1500050E2C /* TabItem2.swift */,
 				0B5DD28F27D6198A000218F9 /* TabItem3.swift */,
-				0B5DD29127D61BDA000218F9 /* ModalView.swift */,
 				0B83FF5727D5FDA700050E2C /* Assets.xcassets */,
 				0B83FF5927D5FDA700050E2C /* Preview Content */,
 			);
@@ -83,6 +90,19 @@
 				0B83FF5A27D5FDA700050E2C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CE23556027D881370085ADD1 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				0B6A78E927D72F4000330667 /* ActivityIndicator.swift */,
+				CE23555E27D880C30085ADD1 /* ButtonMode.swift */,
+				CE23555C27D880220085ADD1 /* TimerManager.swift */,
+				CE23555A27D87FB80085ADD1 /* FirstPageButtonStyle.swift */,
+				0B5DD29127D61BDA000218F9 /* ModalView.swift */,
+				CE23556127D8817C0085ADD1 /* TabManager.swift */,
+			);
+			path = Library;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,8 +176,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B83FF6627D60B1500050E2C /* TabItem2.swift in Sources */,
+				CE23555D27D880220085ADD1 /* TimerManager.swift in Sources */,
 				0B5DD29027D6198A000218F9 /* TabItem3.swift in Sources */,
 				0B83FF6427D60A3E00050E2C /* TabItem1.swift in Sources */,
+				CE23555B27D87FB80085ADD1 /* FirstPageButtonStyle.swift in Sources */,
+				CE23556227D8817C0085ADD1 /* TabManager.swift in Sources */,
+				CE23555F27D880C30085ADD1 /* ButtonMode.swift in Sources */,
 				0B83FF5627D5FDA500050E2C /* ContentView.swift in Sources */,
 				0B6A78EA27D72F4000330667 /* ActivityIndicator.swift in Sources */,
 				0B5DD29227D61BDA000218F9 /* ModalView.swift in Sources */,

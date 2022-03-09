@@ -7,23 +7,7 @@
 
 import SwiftUI
 
-enum Tab {
-    case page1
-    case page2
-    case page3
-}
-
-class TabManager: ObservableObject {
-
-    @Published var activeTab = Tab.page1
-    @Published var needActivateLink = false
-
-    func switchTo(_ tab: Tab) {
-        activeTab = tab
-    }
-
-}
-
+//Main tabview
 struct MainTabView: View {
 
     @StateObject private var tabManager = TabManager()

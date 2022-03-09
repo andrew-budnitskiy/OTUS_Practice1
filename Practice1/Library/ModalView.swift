@@ -7,13 +7,12 @@
 
 import SwiftUI
 
+//Modal view, that is using on third page
 struct ModalView: View {
 
     @Environment(\.presentationMode) var presentationMode
 
     var body: some View {
-
-
 
         NavigationView {
                     Text("Просто текст")

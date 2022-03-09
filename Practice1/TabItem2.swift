@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+//The second tabview's tab item
 struct TabItem2: View {
 
     private let listItemCount = 10
@@ -19,19 +20,19 @@ struct TabItem2: View {
                 ForEach(Range<Int>(0...self.listItemCount)) { index in
                     self.navigationLinkForItem(with: index, canBeActivatedExternally: index == 2)
                 }
-            }.navigationTitle("Список")
+            }.navigationTitle("List")
         }
     }
 
     private func navigationLinkForItem(with index: Int, canBeActivatedExternally: Bool) -> some View {
 
         if canBeActivatedExternally {
-            return NavigationLink("Ссылка \(index)", isActive: $tabManager.needActivateLink) {
-                Text("Раздел \(index)")
+            return NavigationLink("Link \(index)", isActive: $tabManager.needActivateLink) {
+                Text("Item \(index)")
             }
         } else {
-            return NavigationLink("Ссылка \(index)") {
-                Text("Раздел \(index)")
+            return NavigationLink("Link \(index)") {
+                Text("Item \(index)")
             }
         }
 

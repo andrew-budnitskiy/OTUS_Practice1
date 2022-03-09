@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 import SwiftUI
 
+//UIKit control, that can be used in practice
 struct ActivityIndicator: UIViewRepresentable {
 
     @Binding var isAnimating: Bool
